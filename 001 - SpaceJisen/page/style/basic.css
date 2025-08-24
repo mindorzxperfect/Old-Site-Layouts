@@ -1,0 +1,174 @@
+:root {
+    --black: #333333;
+    --e04: #e04;
+    --white: #cccccc;
+
+    width: 100%;
+    height: 100vh;
+}
+/* OFFICIALLY SUPPORTED ELEMENTS */
+body {
+    background: radial-gradient(black, var(--black));
+    font-family:'Courier New', Courier, monospace;
+}
+a {
+    color: purple;
+    text-decoration: none;
+}
+hr {
+    background: linear-gradient(to right, transparent, var(--e04), transparent);
+    border: none;
+    height: 5px;
+    width: 90%;
+}
+/* ALL FUNCTION NO FUN */
+.mw {
+    margin-top: 10px;
+    width: 808px;
+    box-shadow:
+    0px 0px 5px rgba(200, 200, 255, 0.7) inset,
+    0px 0px 10px rgba(200, 200, 255, 0.7);
+}
+.txtbx {
+    text-align: left;
+    padding: 10px;
+}
+.flexbox {
+    display: flex;
+}
+
+.navbar {
+    text-align: center;
+    display: flex;
+    width: 800px;
+    padding: 0px;
+}
+.navbut {
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(200, 200, 255);
+    border: 1px solid rgba(200, 200, 255);
+    background: rgba(200, 200, 255, 0.7);
+    width: 100px;
+}
+.navbut:hover {
+    box-shadow: 0px 0px 10px white;
+    border: 1px solid white;
+    background: rgb(255, 255, 255, 0.7);
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+}
+.btmtxt {
+    color: var(--white);
+    bottom: 0px;
+    text-shadow: 0px 0px 5px rgba(200, 200, 255, 0.7);
+}
+.ovrt {
+    color: lavender;
+}
+.zoop:hover {
+    z-index: 1;
+    transform: scale(1.5);
+}
+/* I FORMAT MY CONTENT LIKE A BENTO BOX SO I CAN VISUALIZE IT */
+.bento {
+    display: flex;
+    width: 800px;
+    box-sizing: border-box;
+    background: url('img/canva/space4.png');
+    background-size: contain;
+}
+.rice {
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    border: 1px solid rgba(200, 200, 255, 0.7);
+    background:rgba(200, 200, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+.meat {
+    width: 200px;
+    height: 600px;
+    box-sizing: border-box;
+    border: 1px solid rgba(200, 200, 255, 0.7);
+    background:rgba(200, 200, 255, 0.7);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+/* CONTROLS THE PRETTY STUFF */
+.banner {
+    width: 800px;
+    height: 100px;
+}
+
+.cover {
+    box-sizing: border-box;
+    width: 250px;
+    height: 350px;
+}
+.covertxt {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 250px;
+    height: 350px;
+    color: transparent;
+    background: transparent;
+    overflow: auto;
+}
+.covertxt:hover {
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+/* MY FUN LIL AVA THING */
+.ava {
+    background-color: transparent;
+    animation-name: ava;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ava {
+    0% {
+        background-color: transparent;
+    }
+    20% {
+        background-color: pink;
+    }
+    40% {
+        background-color: skyblue;
+    }
+    
+    50% {
+        background-color: khaki;
+    }
+    
+    60% {
+        background-color: aquamarine;
+    }
+    80% {
+        background-color: peachpuff;
+    }
+    100% {
+        background-color: lavender;
+    }
+}
+/* SCROLLBAR SETTINGS */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-button  {
+    background: rgba(255, 100, 255, 0.7);
+    border: 1px solid purple;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb  {
+    background: rgba(128, 0, 128, 0.7);
+    width: 10px;
+}
+::-webkit-scrollbar-track  {
+    background: rgba(200, 200, 255, 0.7);
+    border: 1px solid purple;
+    width: 10px;
+}
